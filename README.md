@@ -136,24 +136,24 @@ Integrated with W&B
 Inference (Post-Finetuning)
 Model generates significantly better, step-by-step medical responses
 
-**Technologies Used**
-Tool	                 Purpose
+**Technologies Used**	                 
 
-Unsloth           	Fast LLM loading + training
+Unsloth           	
 
-HuggingFace       	Model hub & dataset loading
+HuggingFace       	
 
-DeepSeek-R1	        Base 8B LLM
+DeepSeek-R1	        
 
-TRL (SFTTrainer)	  Supervised fine-tuning
+TRL (SFTTrainer)	  
 
-Colab / CUDA	      GPU-backed training
+Colab / CUDA	      
 
-W&B	                Experiment tracking
+W&B	               
 
-PyTorch	            Core ML framework
+PyTorch	            
 
 **Future Work**
+
 Train on full dataset (10k+ samples)
 
 Incorporate medical textbooks (PubMed, UMLS)
