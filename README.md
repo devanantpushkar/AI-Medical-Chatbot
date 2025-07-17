@@ -124,6 +124,8 @@ Run sample queries through the base model to establish baseline
 5. Dataset Preparation
 Format each sample into:
 
+```python
+
  Question:
 <question>
 
@@ -133,7 +135,11 @@ Format each sample into:
 <Final answer>
 Append <eos> token for training
 
+```
+
 6. LoRA Integration
+
+   ```python
 Applied to attention projection layers:
 
 q_proj, k_proj, v_proj, o_proj, etc.
@@ -150,6 +156,8 @@ Max steps: 60
 Optimizer: adamw_8bit
 
 Mixed precision: bfloat16 or fp16
+
+```
 
 Integrated with W&B
 
