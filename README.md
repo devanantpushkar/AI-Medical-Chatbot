@@ -86,7 +86,7 @@ model, tokenizer = FastLanguageModel.from_pretrained(
     token = hf_token
 )
 
-4. Prompt Template
+3. Prompt Template
    
 ### Task:
 You are a medical expert specializing in clinical reasoning...
@@ -101,7 +101,7 @@ You are a medical expert specializing in clinical reasoning...
    
 Run sample queries through the base model to establish baseline
 
-6. Dataset Preparation
+5. Dataset Preparation
 Format each sample into:
 
 ### Question:
@@ -138,12 +138,19 @@ Model generates significantly better, step-by-step medical responses
 
 **Technologies Used**
 Tool	                 Purpose
+
 Unsloth           	Fast LLM loading + training
+
 HuggingFace       	Model hub & dataset loading
+
 DeepSeek-R1	        Base 8B LLM
+
 TRL (SFTTrainer)	  Supervised fine-tuning
+
 Colab / CUDA	      GPU-backed training
+
 W&B	                Experiment tracking
+
 PyTorch	            Core ML framework
 
 **Future Work**
