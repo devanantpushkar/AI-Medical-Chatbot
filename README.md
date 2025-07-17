@@ -1,8 +1,12 @@
 **Fine-Tuning DeepSeek-R1 for Medical Chain-of-Thought Reasoning**
 
+---
+
 A complete workflow to fine-tune the DeepSeek-R1 LLM on complex medical question-answering tasks using Unsloth for optimized performance on Colab with LoRA. This project is built to teach a model clinical reasoning and step-by-step diagnosis planning using a curated dataset.
 
 **Table of Contents:**
+
+---
 
 Overview
 
@@ -23,6 +27,8 @@ Results
 Future Work
 
 License
+
+---
 
 **Overview:**
 
