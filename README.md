@@ -1,4 +1,4 @@
-**Fine-Tuning DeepSeek-R1 for Medical Chain-of-Thought Reasoning**
+## Fine-Tuning DeepSeek-R1 for Medical Chain-of-Thought Reasoning
 
 ---
 
@@ -28,13 +28,16 @@ Future Work
 
 License
 
----
 
 **Overview:**
+
+---
 
 This project aims to fine-tune the DeepSeek-R1-Distill-Llama-8B model to answer complex clinical questions with step-by-step reasoning. It leverages the FreedomIntelligence/medical-o1-reasoning-SFT dataset, containing structured prompts with CoT (Chain-of-Thought) style explanations.**
 
 **Features:**
+
+---
 
 Fine-tunes DeepSeek-R1 using Unsloth
 
@@ -49,6 +52,8 @@ Integrated with Weights & Biases for experiment tracking
 GPU-ready, bfloat16 and 4-bit quantization support
 
 **Model & Dataset:**
+
+---
 
 Base Model
 dee/DeepSeek-R1-Distill-Llama-8B
@@ -69,6 +74,8 @@ Response: Final answer
 Size: 500 training examples (sampled)
 
 **Training Pipeline**
+
+---
 
 1. Environment Setup
 Install Unsloth and dependencies
@@ -142,7 +149,9 @@ Integrated with W&B
 Inference (Post-Finetuning)
 Model generates significantly better, step-by-step medical responses
 
-**Technologies Used**	                 
+**Technologies Used**	
+
+---
 
 Unsloth           	
 
@@ -159,6 +168,8 @@ W&B
 PyTorch	            
 
 **Future Work**
+
+---
 
 Train on full dataset (10k+ samples)
 
