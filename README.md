@@ -87,14 +87,14 @@ model, tokenizer = FastLanguageModel.from_pretrained(
 )
 
 3. Prompt Template
-   
-### Task:
+
+    Task:
 You are a medical expert specializing in clinical reasoning...
 
-### Query:
+ Query:
 {question}
 
-### Answer:
+ Answer:
 {output}
 
 4. Inference Test (Before Finetuning)
@@ -104,10 +104,10 @@ Run sample queries through the base model to establish baseline
 5. Dataset Preparation
 Format each sample into:
 
-### Question:
+ Question:
 <question>
 
-### Response:
+ Response:
 <Chain-of-thought>
 
 <Final answer>
