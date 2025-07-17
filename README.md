@@ -1,7 +1,9 @@
 **Fine-Tuning DeepSeek-R1 for Medical Chain-of-Thought Reasoning**
+
 A complete workflow to fine-tune the DeepSeek-R1 LLM on complex medical question-answering tasks using Unsloth for optimized performance on Colab with LoRA. This project is built to teach a model clinical reasoning and step-by-step diagnosis planning using a curated dataset.
 
 **Table of Contents:**
+
 Overview
 
 Features
@@ -23,9 +25,11 @@ Future Work
 License
 
 **Overview:**
+
 This project aims to fine-tune the DeepSeek-R1-Distill-Llama-8B model to answer complex clinical questions with step-by-step reasoning. It leverages the FreedomIntelligence/medical-o1-reasoning-SFT dataset, containing structured prompts with CoT (Chain-of-Thought) style explanations.**
 
 **Features:**
+
 Fine-tunes DeepSeek-R1 using Unsloth
 
 Supports LoRA for efficient parameter training
@@ -39,6 +43,7 @@ Integrated with Weights & Biases for experiment tracking
 GPU-ready, bfloat16 and 4-bit quantization support
 
 **Model & Dataset:**
+
 Base Model
 dee/DeepSeek-R1-Distill-Llama-8B
 
@@ -58,6 +63,7 @@ Response: Final answer
 Size: 500 training examples (sampled)
 
 **Training Pipeline**
+
 1. Environment Setup
 Install Unsloth and dependencies
 
@@ -70,13 +76,17 @@ python
 Copy
 Edit
 model, tokenizer = FastLanguageModel.from_pretrained(
+
     model_name = "dee/DeepSeek-R1-Distill-Llama-8B",
+   
     max_seq_length = 2048,
+   
     load_in_4bit = True,
+   
     token = hf_token
 )
 
-3. Prompt Template
+4. Prompt Template
 txt
 Copy
 Edit
@@ -88,6 +98,7 @@ You are a medical expert specializing in clinical reasoning...
 
 ### Answer:
 {output}
+
 4. Inference Test (Before Finetuning)
 Run sample queries through the base model to establish baseline
 
