@@ -139,8 +139,10 @@ Append <eos> token for training
 
 6. LoRA Integration
 
-   ```python
+   
 Applied to attention projection layers:
+
+```python
 
 q_proj, k_proj, v_proj, o_proj, etc.
 
@@ -159,10 +161,6 @@ Mixed precision: bfloat16 or fp16
 
 ```
 
-Integrated with W&B
-
-Inference (Post-Finetuning)
-Model generates significantly better, step-by-step medical responses
 
 **Technologies Used**	
 
