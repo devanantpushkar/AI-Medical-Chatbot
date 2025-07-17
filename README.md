@@ -78,6 +78,7 @@ Size: 500 training examples (sampled)
 ---
 
 1. Environment Setup
+   
 Install Unsloth and dependencies
 
 Check GPU availability
@@ -105,11 +106,16 @@ model, tokenizer = FastLanguageModel.from_pretrained(
     Task:
 You are a medical expert specializing in clinical reasoning...
 
+```python
+
  Query:
 {question}
 
  Answer:
 {output}
+
+
+```
 
 4. Inference Test (Before Finetuning)
    
