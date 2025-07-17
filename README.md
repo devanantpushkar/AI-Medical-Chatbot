@@ -85,9 +85,8 @@ Check GPU availability
 Login to HuggingFace and Weights & Biases using tokens
 
 2. Load Model
-python
-Copy
-Edit
+ 
+```python
 model, tokenizer = FastLanguageModel.from_pretrained(
 
     model_name = "dee/DeepSeek-R1-Distill-Llama-8B",
@@ -98,6 +97,8 @@ model, tokenizer = FastLanguageModel.from_pretrained(
    
     token = hf_token
 )
+
+```
 
 3. Prompt Template
 
