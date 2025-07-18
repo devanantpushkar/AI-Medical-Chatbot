@@ -178,7 +178,44 @@ Colab / CUDA
 
 W&B	               
 
-PyTorch	            
+PyTorch
+
+---
+
+** How to Run**
+
+1. Clone the Repo
+   
+```bash
+git clone https://github.com/yourusername/ai-doctor.git
+cd ai-doctor
+```
+
+2. Install Dependencies
+
+```bash
+pip install torch transformers datasets trl wandb unsloth accelerate streamlit
+```
+
+3. Train the Model
+Edit and run train.py to fine-tune DeepSeek-R1:
+
+```bash
+python train.py
+ GPU with ≥12GB VRAM is required. Unsloth only supports NVIDIA GPUs.
+```
+
+4. Run Inference
+
+```bash
+python infer.py
+```
+
+5. Launch the Streamlit App
+
+```bash
+streamlit run app.py
+```
 
 **Future Work**
 
